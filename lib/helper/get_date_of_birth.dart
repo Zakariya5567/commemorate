@@ -15,20 +15,20 @@ Future<String?> selectDatePicker({DateTime? preSelectedDate}) async {
               useMaterial3: false,
               primarySwatch:
                   const MaterialColor(0x219942, AppColors.primaryColor),
-              splashColor: AppColors.blackPrimary,
+              splashColor: AppColors.greyPrimary,
               textTheme: TextTheme(
-                titleMedium: const TextStyle(color: AppColors.blackPrimary),
+                titleMedium: const TextStyle(color: AppColors.greyPrimary),
                 headlineMedium:
                     TextStyle(fontSize: 24.h, fontWeight: FontWeight.bold),
-                labelLarge: const TextStyle(color: AppColors.blackPrimary),
+                labelLarge: const TextStyle(color: AppColors.greyPrimary),
               ),
               colorScheme: const ColorScheme.light(
                   primary: AppColors.greenPrimary,
-                  onSecondary: AppColors.blackPrimary,
+                  onSecondary: AppColors.greyPrimary,
                   onPrimary: AppColors.whitePrimary,
-                  surface: AppColors.blackPrimary,
-                  onSurface: AppColors.blackPrimary,
-                  secondary: AppColors.blackPrimary),
+                  surface: AppColors.greyPrimary,
+                  onSurface: AppColors.greyPrimary,
+                  secondary: AppColors.greyPrimary),
               dialogBackgroundColor: AppColors.whitePrimary,
             ),
             child: child ?? const Text(""),

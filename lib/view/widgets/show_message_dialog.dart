@@ -50,7 +50,7 @@ Widget contentBox(
             message,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              color: AppColors.blackPrimary,
+              color: AppColors.greyPrimary,
               fontSize: 16,
               fontWeight: AppStyle.w600,
               fontFamily: AppStyle.gothamRegular,
