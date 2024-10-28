@@ -32,9 +32,6 @@ class _MainScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               }
             },
             child: Scaffold(
-              backgroundColor: controller.currentIndex == 1
-                  ? AppColors.greenPrimary
-                  : AppColors.whitePrimary,
               body: controller.bottomNavigationIndex[controller.currentIndex],
               bottomNavigationBar: const BottomNavigation(currentIndex: 0),
             ),

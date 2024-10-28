@@ -44,7 +44,7 @@ class NoDataFound extends StatelessWidget {
                 maxLine: 2,
                 textAlign: TextAlign.center,
                 fontSize: 16,
-                fontFamily: AppStyle.gothamMedium,
+                fontFamily: AppStyle.pretendardMedium,
                 fontWeight: AppStyle.w500,
                 color: AppColors.blackSecondary,
               )
@@ -55,7 +55,7 @@ class NoDataFound extends StatelessWidget {
                   maxLine: 2,
                   textAlign: TextAlign.center,
                   fontSize: 14,
-                  fontFamily: AppStyle.gothamRegular,
+                  fontFamily: AppStyle.pretendardRegular,
                   fontWeight: AppStyle.w500,
                   color: AppColors.greyPrimary,
                 ),

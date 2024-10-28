@@ -53,7 +53,7 @@ Widget contentBox(
               color: AppColors.greyPrimary,
               fontSize: 16,
               fontWeight: AppStyle.w600,
-              fontFamily: AppStyle.gothamRegular,
+              fontFamily: AppStyle.pretendardRegular,
             ),
           ),
         ),

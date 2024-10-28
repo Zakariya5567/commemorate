@@ -32,7 +32,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     return Consumer<BottomNavigationProvider>(
         builder: (context, controller, child) {
       return Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: AppColors.whitePrimary,
             border: Border(
                 top: BorderSide(
@@ -47,56 +47,100 @@ class _BottomNavigationState extends State<BottomNavigation> {
               unselectedFontSize: 10.h,
               selectedFontSize: 10.h,
               selectedLabelStyle: const TextStyle(
-                  fontFamily: AppStyle.gothamRegular,
+                  fontFamily: AppStyle.pretendardSemiBold,
+                  color: AppColors.brownPrimary,
                   fontWeight: FontWeight.w600),
               unselectedLabelStyle: const TextStyle(
-                  fontFamily: AppStyle.gothamRegular,
+                  fontFamily: AppStyle.pretendardSemiBold,
+                  color: AppColors.whitePrimary,
                   fontWeight: FontWeight.w400),
-              selectedItemColor: AppColors.greenPrimary,
-              unselectedItemColor: AppColors.greyPrimary,
-              backgroundColor: Colors.transparent,
+              selectedItemColor: AppColors.brownPrimary,
+              unselectedItemColor: AppColors.whitePrimary,
+              backgroundColor: AppColors.greyPrimary,
               elevation: 0,
               currentIndex: controller.currentIndex,
               onTap: (index) {
                 // set the current index of the bottom navigation bar
                 // the function is declared inside BottomNavigationProvider
-                deBouncer.run(() {
-                  controller.setCurrentIndex(index);
-                  if (widget.currentIndex != index) {
-                    switch (index) {
-                      case 0:
-                        controller.setCurrentIndex(0);
-                        break;
-                      case 1:
-                        controller.setCurrentIndex(1);
-                        break;
-                      default:
-                        break;
-                    }
+                // deBouncer.run(() {
+                controller.setCurrentIndex(index);
+                if (widget.currentIndex != index) {
+                  switch (index) {
+                    case 0:
+                      controller.setCurrentIndex(0);
+                      break;
+                    case 1:
+                      controller.setCurrentIndex(1);
+                      break;
+                    case 2:
+                      controller.setCurrentIndex(2);
+                      break;
+                    case 3:
+                      controller.setCurrentIndex(3);
+                      break;
+                    case 4:
+                      controller.setCurrentIndex(4);
+                      break;
+                    default:
+                      break;
                   }
-                });
+                }
+                //  });
               },
               items: <BottomNavigationBarItem>[
-                // Home
+                // Funeral Guide
                 BottomNavigationBarItem(
                     icon: svgAssetImage(
                       controller.currentIndex == 0
-                          ? AppIcons.iconSuccess
-                          : AppIcons.iconSuccess,
+                          ? AppIcons.iconListFill
+                          : AppIcons.iconList,
                       height: 24.h,
                       width: 24.h,
                     ).paddingOnly(bottom: 5.h, top: 5.h),
-                    label: AppConstant.signInText),
-                // Customers
+                    label: AppConstant.funeralGuide),
+                // Preparation List
                 BottomNavigationBarItem(
                     icon: svgAssetImage(
                       controller.currentIndex == 1
-                          ? AppIcons.iconSuccess
-                          : AppIcons.iconSuccess,
+                          ? AppIcons.iconBookmarkFill
+                          : AppIcons.iconBookmark,
                       height: 24.h,
                       width: 24.h,
                     ).paddingOnly(bottom: 5.h, top: 5.h),
-                    label: AppConstant.signInText),
+                    label: AppConstant.preparationList),
+
+                // Obituary
+                BottomNavigationBarItem(
+                    icon: svgAssetImage(
+                      controller.currentIndex == 2
+                          ? AppIcons.iconInboxFill
+                          : AppIcons.iconInbox,
+                      height: 24.h,
+                      width: 24.h,
+                    ).paddingOnly(bottom: 5.h, top: 5.h),
+                    label: AppConstant.obituary),
+
+                // Thank you
+                BottomNavigationBarItem(
+                    icon: svgAssetImage(
+                      controller.currentIndex == 3
+                          ? AppIcons.iconChatFill
+                          : AppIcons.iconChat,
+                      height: 24.h,
+                      width: 24.h,
+                    ).paddingOnly(bottom: 5.h, top: 5.h),
+                    label: AppConstant.thankYou),
+
+                // New Journey
+                BottomNavigationBarItem(
+                    icon: svgAssetImage(
+                      controller.currentIndex == 4
+                          ? AppIcons.iconJourneyFill
+                          : AppIcons.iconJourney,
+                      height: 24.h,
+                      width: 24.h,
+                    ).paddingOnly(bottom: 5.h, top: 5.h),
+                    label: AppConstant.newJourney),
               ]),
         ),
       );

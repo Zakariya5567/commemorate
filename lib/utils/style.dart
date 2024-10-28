@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AppStyle {
-  static const String gothamLight = "GothamLight";
-  static const String gothamRegular = "GothamRegular";
-  static const String gothamMedium = "GothamMedium";
-  static const String gothamBold = "GothamBold";
+  static const String pretendardExtraBold = "PretendardExtraBold";
+  static const String pretendardBold = "PretendardBold";
+  static const String pretendardSemiBold = "PretendardSemiBold";
+  static const String pretendardMedium = "PretendardMedium";
+  static const String pretendardRegular = "PretendardRegular";
+  static const String pretendardLight = "PretendardLight";
+  static const String pretendardThin = "PretendardThin";
 
 // Font Weight
   static const FontWeight w100 = FontWeight.w100;

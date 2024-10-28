@@ -1,5 +1,9 @@
 class AppConstant {
-  static const String signInText = "Sign In";
+  static const String funeralGuide = "장례절차";
+  static const String preparationList = "사전준비 목록";
+  static const String obituary = "부고문자";
+  static const String thankYou = "답례문자";
+  static const String newJourney = "새로운 여정";
 
   // Exception
   static const String internetConnectionMessage =

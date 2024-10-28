@@ -38,7 +38,7 @@ SnackBar _customSnackBar(BuildContext context, String message, bool isError) {
               textAlign: TextAlign.start,
               fontSize: 14,
               color: AppColors.whitePrimary,
-              fontFamily: AppStyle.gothamMedium),
+              fontFamily: AppStyle.pretendardRegular),
         ),
       ),
     ),
