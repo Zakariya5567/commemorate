@@ -8,6 +8,7 @@ class AppStyle {
   static const String pretendardRegular = "PretendardRegular";
   static const String pretendardLight = "PretendardLight";
   static const String pretendardThin = "PretendardThin";
+  static const String suseongHyejeong = "SuseongHyejeong";
 
 // Font Weight
   static const FontWeight w100 = FontWeight.w100;

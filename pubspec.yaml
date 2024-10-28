@@ -95,3 +95,7 @@ flutter:
     - family: PretendardThin
       fonts:
         - asset: assets/fonts/PretendardThin.otf
+
+    - family: SuseongHyejeong
+      fonts:
+        - asset: assets/fonts/SuseongHyejeong.otf
