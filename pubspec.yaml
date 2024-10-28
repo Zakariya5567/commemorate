@@ -74,18 +74,24 @@ flutter:
     - assets/fonts/
 
   fonts:
-    - family: GothamBold
+    - family: PretendardBold
       fonts:
-        - asset: assets/fonts/GothamBold.ttf
-
-    - family: GothamMedium
+        - asset: assets/fonts/PretendardBold.otf
+    - family: PretendardExtraBold
       fonts:
-        - asset: assets/fonts/GothamMedium.ttf
-
-    - family: GothamRegular
+        - asset: assets/fonts/PretendardExtraBold.otf
+    - family: PretendardSemiBold
       fonts:
-        - asset: assets/fonts/GothamRegular.ttf
-
-    - family: GothamLight
+        - asset: assets/fonts/PretendardSemiBold.otf
+    - family: PretendardMedium
       fonts:
-        - asset: assets/fonts/GothamLight.ttf
+        - asset: assets/fonts/PretendardMedium.otf
+    - family: PretendardRegular
+      fonts:
+        - asset: assets/fonts/PretendardRegular.otf
+    - family: PretendardLight
+      fonts:
+        - asset: assets/fonts/PretendardLight.otf
+    - family: PretendardThin
+      fonts:
+        - asset: assets/fonts/PretendardThin.otf
