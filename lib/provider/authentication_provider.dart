@@ -58,7 +58,7 @@ class AuthProvider extends ChangeNotifier {
     debugPrint("isLoading: $isLoading");
     debugPrint("SignIn ==========================>>>");
     try {
-      Response response = await apiRepo.postRequest(ApiUrl.signInUrl, {
+      Response response = await apiRepo.postRequest(ApiUrl.registerUrl, {
         "email": signInEmailController.text,
         "password": signInPasswordController.text,
       });
