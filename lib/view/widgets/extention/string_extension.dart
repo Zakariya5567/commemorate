@@ -1,3 +1,4 @@
+import 'package:commemorate/utils/style.dart';
 import 'package:commemorate/view/widgets/extention/int_extension.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,7 @@ extension StringExtension on String {
           Color? backgroundColor,
           double? lineHeight,
           bool? isBold,
+          bool? isUnderLine = false,
           bool? isMedium}) =>
       Text(
         this,
@@ -25,9 +27,10 @@ extension StringExtension on String {
           backgroundColor: backgroundColor,
           color: color ?? AppColors.blackSecondary,
           fontSize: (fontSize ?? 12).toInt().h,
-          fontFamily: fontFamily,
+          fontFamily: fontFamily??AppStyle.pretendardRegular,
           fontStyle: FontStyle.normal,
           overflow: overflow ?? TextOverflow.ellipsis,
+          decoration: isUnderLine! ? TextDecoration.underline : TextDecoration.none,
           fontWeight: fontWeight ??
               (isBold == true
                   ? FontWeight.bold

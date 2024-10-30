@@ -30,8 +30,10 @@ class AppColors {
 
   static const greyPrimary = Color.fromRGBO(67, 67, 67, 1);
   static const greySecondary = Color.fromRGBO(86, 87, 88, 1);
-  static const greyTertiary = Color.fromRGBO(144, 144, 144, 1);
+  static const greyTertiary = Color.fromRGBO(153, 153, 153, 1);
+  static const toolTipColor = Color.fromRGBO(144, 144, 144, 1);
   static const greyQuaternary = Color.fromRGBO(229, 229, 229, 1);
+  static const greyTextFieldBorder = Color.fromRGBO(213, 213, 213, 1);
 
   static const whitePrimary = Color.fromRGBO(255, 255, 255, 1);
   static const whiteSecondary = Color.fromRGBO(250, 250, 250, 1);
@@ -49,6 +51,14 @@ class AppColors {
       systemNavigationBarColor: whitePrimary,
       systemNavigationBarIconBrightness: Brightness.dark,
       systemNavigationBarDividerColor: whitePrimary);
+
+  // statusBar
+  static const greyStatusBar = SystemUiOverlayStyle(
+      statusBarColor: greyPrimary,
+      statusBarIconBrightness: Brightness.light,
+      systemNavigationBarColor: greyPrimary,
+      systemNavigationBarIconBrightness: Brightness.light,
+      systemNavigationBarDividerColor: greyPrimary);
 
   static const transparentStatusBar = SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,

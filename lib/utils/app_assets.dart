@@ -12,11 +12,16 @@ class AppIcons {
   static const String iconChat = "assets/icons/ic_chat.svg";
   static const String iconChatFill = "assets/icons/ic_chat_fill.svg";
   static const String iconAdd = "assets/icons/ic_add.svg";
-  static const String iconArrowDown = "assets/icons/іс_arrow_down.svg";
+  static const String iconDrawer = "assets/icons/ic_drawer.svg";
+  static const String iconAppIcon = "assets/icons/ic_app_icon.svg";
+  static const String iconArrowDown = "assets/icons/ic_arrow_down.svg";
+  static const String iconArrowDownPng = "assets/icons/ic_arrow_down.png";
   static const String iconArrowLeft = "assets/icons/ic_arrow_left.svg";
   static const String iconArrowRight = "assets/icons/ic_arrow_right.svg";
   static const String iconArrowUp = "assets/icons/ic_arrow_up.svg";
+  static const String iconArrowUpPng = "assets/icons/ic_arrow_up.png";
   static const String iconArrowsUp = "assets/icons/ic_arrows_up.svg";
+  static const String iconArrowsDown = "assets/icons/ic_arrows_down.svg";
   static const String iconBLogo = "assets/icons/ic_b_logo.svg";
   static const String iconBlueLogo = "assets/icons/ic_blue_logo.svg";
   static const String iconChainLogo = "assets/icons/ic_chain_logo.svg";
@@ -31,6 +36,8 @@ class AppIcons {
   static const String iconInfoOutline = "assets/icons/ic_info_outline.svg";
   static const String iconLocation = "assets/icons/ic_location.svg";
   static const String iconLogoFair = "assets/icons/ic_logo_fair.svg";
+  static const String iconLogoFairPng = "assets/icons/ic_logo_fair_png.png";
+  static const String iconLogoTreePng = "assets/icons/ic_logo_tree_png.png";
   static const String iconLogoTree = "assets/icons/ic_logo_tree.svg";
   static const String iconMap_1 = "assets/icons/ic_map_1.svg";
   static const String iconMap_2 = "assets/icons/ic_map_2.svg";
@@ -47,15 +54,22 @@ class AppIcons {
   static const String iconTab = "assets/icons/ic_tab.svg";
   static const String iconTalk = "assets/icons/ic_talk.svg";
   static const String iconTick = "assets/icons/ic_tick.svg";
+  static const String iconToggle = "assets/icons/ic_toggle.svg";
+  static const String iconCheckbox = "assets/icons/ic_checkbox.svg";
+  static const String iconCheckboxUncheck = "assets/icons/ic_checkbox_uncheck.svg";
 }
 
 class AppImages {
   static const String imgBag = "assets/images/img_bag.svg";
   static const String imgDownFlower = "assets/images/img_down_flower.svg";
+  static const String imgDownFlowerPng = "assets/images/img_down_flower.png";
   static const String imgFlower = "assets/images/img_flower.svg";
+  static const String imgFlowerPng = "assets/images/img_flower.png";
   static const String imgLeftFlower = "assets/images/img_left_flower.svg";
+  static const String imgLeftFlowerPng = "assets/images/img_left_flower.png";
   static const String imgPassport = "assets/images/img_passport.svg";
   static const String imgPassportBack = "assets/images/img_passport_back.svg";
   static const String imgRightFlower = "assets/images/img_right_flower.svg";
   static const String imgSideFlower = "assets/images/img_side_flower.svg";
+  static const String imgSideFlowerPng = "assets/images/img_side_flower.png";
 }

@@ -1,3 +1,5 @@
+import 'package:commemorate/view/widgets/custom_appbar.dart';
+import 'package:commemorate/view/widgets/funeral_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -13,6 +15,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   void initState() {
     super.initState();
@@ -21,7 +25,7 @@ class _MainScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: AppColors.whiteStatusBar,
+      value: AppColors.greyStatusBar,
       child: Consumer<BottomNavigationProvider>(
         builder: (context, controller, child) {
           return PopScope(
@@ -32,6 +36,9 @@ class _MainScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               }
             },
             child: Scaffold(
+              key: scaffoldKey,
+              drawer: const FuneralDrawer(),
+              appBar: CustomAppBar(onDrawerTap: () {scaffoldKey.currentState!.openDrawer();},),
               body: controller.bottomNavigationIndex[controller.currentIndex],
               bottomNavigationBar: const BottomNavigation(currentIndex: 0),
             ),
